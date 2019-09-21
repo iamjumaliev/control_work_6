@@ -81,11 +81,14 @@ def note_update_view(request, pk):
                 return render(request, 'update.html', context={'form': form, 'book': book})
 
 
-# def plan_delete_view(request, pk):
-#     plan = get_object_or_404(Plan, pk=pk)
-#     if request.method == 'GET':
-#         return render(request, 'delete.html', context={'plan': plan})
-#     elif request.method == 'POST':
-#         plan.delete()
-#         return redirect('index')
+def note_delete_view(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', context={'book': book})
+    elif request.method == 'POST':
+        book.delete()
+        return redirect('index')
+
+
+
 # Create your views here.

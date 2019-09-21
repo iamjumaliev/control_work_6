@@ -16,6 +16,7 @@
 
        <h2>{{ book.name }} ({{ book.email }})
            <a href="{% url 'update_note' book.pk %}"><i class="fas fa-pen"></i></a>
+           <a href="{% url 'delete_note' book.pk %}"><i class="fas fa-trash"></i></a>
        </h2>
 
        <p>{{ book.text }}</p>
