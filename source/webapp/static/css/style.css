@@ -92,6 +92,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.fas{
+    margin: 0px 3px;
+}
+
 .form-error {
     color: red;
     font-size: 12px;
