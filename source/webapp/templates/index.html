@@ -4,7 +4,7 @@
     <form method="GET" class="search" action="{% url 'search' %}">
               {% csrf_token %}
               {{ form.search_name }}
-              <p><input type="submit" class="btn"  value="Confirm"></p>
+              <p><input type="submit" class="btn"  value="Search"></p>
     </form>
 {% endblock %}
 
