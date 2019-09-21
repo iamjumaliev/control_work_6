@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.book",
+  "pk": 1,
+  "fields": {
+    "name": "\u0430\u0440\u0430\u0431",
+    "email": "efaslra@example.com",
+    "text": "efdks;lksl;gkrel;gklregjkljgkfdsge",
+    "created_at": "2019-09-21T07:37:17.771Z",
+    "updated_at": "2019-09-21T07:37:17.771Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 2,
+  "fields": {
+    "name": "\u0438\u043d\u0434\u0443\u0441",
+    "email": "indus@example.com",
+    "text": "lololololololololololololol",
+    "created_at": "2019-09-21T07:38:08.356Z",
+    "updated_at": "2019-09-21T07:38:08.356Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 3,
+  "fields": {
+    "name": "\u043b\u0430\u0433\u043c\u0430\u043d",
+    "email": "lagman@example.com",
+    "text": "\u043b\u0430\u044c\u043b\u043f\u043e\u043b\u0432\u044b\u043e\u043f\u0434\u0430\u043e\u043f\u043b\u0434\u0444\u044b\u0432",
+    "created_at": "2019-09-21T07:38:45.099Z",
+    "updated_at": "2019-09-21T07:38:45.099Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 4,
+  "fields": {
+    "name": "tajik",
+    "email": "tajik@example.com",
+    "text": "tajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajiktajik",
+    "created_at": "2019-09-21T07:39:25.139Z",
+    "updated_at": "2019-09-21T07:39:25.139Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 5,
+  "fields": {
+    "name": "plov",
+    "email": "plov@example.com",
+    "text": "plovplovplovplovplovplovplovplovplovplovplovplovplov",
+    "created_at": "2019-09-21T07:40:33.991Z",
+    "updated_at": "2019-09-21T07:40:33.991Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 6,
+  "fields": {
+    "name": "pizza",
+    "email": "pizza@example.com",
+    "text": "lolololoskdokfokfosldoskfoskfosdokfksodf",
+    "created_at": "2019-09-21T07:42:12.192Z",
+    "updated_at": "2019-09-21T07:42:12.192Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Ru31DFqeCL6c$CGKHJ0mJeNSXccA24l53rKUFMitl+YCIKXUMBBUukPA=",
+    "last_login": "2019-09-21T07:34:34.568Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T05:08:38.698Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
