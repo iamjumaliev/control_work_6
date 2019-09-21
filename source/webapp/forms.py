@@ -9,3 +9,8 @@ class BookForm(forms.Form):
     email = forms.EmailField(max_length=300, label='Почта', required=True)
 
     text = forms.CharField(max_length=300, label='Текст', required=True, widget=widgets.Textarea)
+
+
+class SearchForm(forms.Form):
+
+    search_name = forms.CharField(max_length=300, label='Имя', required=True)

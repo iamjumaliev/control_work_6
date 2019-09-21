@@ -1,11 +1,7 @@
 {% extends 'base.html' %}
 
 {% block menu %}
-    <form method="GET" class="search" action="{% url 'search' %}">
-              {% csrf_token %}
-              {{ form.search_name }}
-              <p><input type="submit" class="btn"  value="Confirm"></p>
-    </form>
+
 {% endblock %}
 
 {% block content %}
@@ -15,18 +11,15 @@
    <hr/>
 
    {% for book in books %}
-       <div class="text">
-       <h2>{{ book.name }} ({{ book.email }})</h2>
-           <div class="icons">
+
+       <h2>{{ book.name }} ({{ book.email }})
            <a href="{% url 'update_note' book.pk %}"><i class="fas fa-pen"></i></a>
            <a href="{% url 'delete_note' book.pk %}"><i class="fas fa-trash"></i></a>
-           </div>
-
-       </div>
+       </h2>
 
        <p>{{ book.text }}</p>
 
-
+       <p>{{ plan.status }}</p>
 
        <hr/>
 

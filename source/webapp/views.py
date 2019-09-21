@@ -1,14 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from webapp.forms import BookForm
+from webapp.forms import BookForm,SearchForm
 from webapp.models import Book
 
 
 def index_view(request, *args, **kwargs):
     books = Book.objects.all().filter(status='active').order_by('-created_at')
-
+    form = SearchForm()
     return render(request, 'index.html', context={
-        'books': books
+        'books': books, 'form': form
     })
 
 def add_new_note(request, *args, **kwargs):
@@ -90,5 +90,11 @@ def note_delete_view(request, pk):
         return redirect('index')
 
 
+def search(request, *args, **kwargs):
+    book = request.GET.get('search_name')
 
+    books = Book.objects.all().filter(status='active').filter(name__icontains=book).order_by('-created_at')
+    return render(request, 'search.html', context={
+        'books': books,
+    })
 # Create your views here.
